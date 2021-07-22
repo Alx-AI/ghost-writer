@@ -31,6 +31,6 @@ def home():
 
 if __name__ == "__main__":
     # you will need to change code.ai-camp.org to other urls if you are not running on the coding center.
-    print("Try to open\n\n    https://coding.ai-camp.org" + base_url + '\n\n')
+    print("Try to open\n\n    https://cocalc5.ai-camp.org" + base_url + '\n\n')
     app.run(host = '0.0.0.0', port = port, debug=True)
     import sys; sys.exit(0)

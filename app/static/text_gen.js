@@ -7,6 +7,7 @@ $(document).ready(function() {
     $('#text_gen_button').click(function() {
         console.log('text gen button is clicked');
         var prompt = $('#text_gen_input').val();
+        var genre = $('#genre').val();
         console.log('text gen input value is');
         console.log(prompt);
         var url = 'generate_text'
@@ -16,7 +17,8 @@ $(document).ready(function() {
         $.post(
             url, 
             {
-                'prompt': prompt
+                'prompt': prompt,
+                'genre':genre
             },
             function(data) {
                 console.log(data);
